@@ -1,0 +1,15 @@
+<?php
+$dbname="q&aforum";
+$username="root";
+$hostname="localhost";
+$password="";
+
+try {
+    $conn = new PDO("mysql:host=$hostname;dbname=$dbname",$username,$password);
+   // echo 'Connected to Database<br/>';
+}
+catch(PDOException $e)
+    {
+    	echo $e->getMessage();
+    }
+?>
