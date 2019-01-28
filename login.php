@@ -1,41 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-				<h2>Login Form</h2>
-				<form action="validation.php" method="post">
-					<div class="form-group">
-						<label>username</label>
+<?php
+	include 'header1.php';
+?>
+<section class="content">
+	<div class="box">
+		
+			
+		
+		<div class="box-body">
+			<form action="validation.php" class="form-horizontal" method="post">
+				<div class="row form-group">
+					<div class="col-sm-6">
+						<h2> Login Form</h2>
+						<label>Username</label>
 						<input type="text" name="username" class="form-control">
-					</div>
-					<div class="form-group">
-						<label>password</label>
+						<label>Password</label>
 						<input type="password" name="password" class="form-control">
+						<button type="submit" class="btn btn-primary">Login</button>
 					</div>
-					<button type="submit" class="btn btn-primary">Login</button>
-				</form>
-			</div>
-			<div class="col-lg-6">
-				<h2>Sign in Form</h2>
-				<form action="registration.php" method="post">
-					<div class="form-group">
-						<label>username</label>
+					<div class="col-sm-6">
+						<h2> Registration Form </h2>
+						<label>Username</label>
 						<input type="text" name="username" class="form-control">
-					</div>
-					<div class="form-group">
-						<label>password</label>
+						<label>Password</label>
 						<input type="password" name="password" class="form-control">
+						<button type="submit" class="btn btn-primary">Sign in</button>
 					</div>
-					<button type="submit" class="btn btn-primary">sign in</button>
-				</form>
-			</div>
+				</div>
+			</form>
 		</div>
 	</div>
-</body>
-</html>
+</section>
