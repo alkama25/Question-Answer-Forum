@@ -1,5 +1,6 @@
 <?php
 	include 'header1.php';
+	header('location:homepage.php');
 ?>
 <section class="content">
 	<div class="box">
